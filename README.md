@@ -8,7 +8,7 @@ Findings
 
 Below is a summary of different training instances with their respective configurations and results:
 
-| Training Instance| Optimizer | Regularizer | Epochs | Early Stopping | Layers | Learning Rate | Accuracy | Loss   | F1 Score | Precision | Recall | ROC AUC
+| Training Instance          | Optimizer          | Regularizer          | Epochs          | Early Stopping          | Layers          | Learning Rate          | Accuracy          | Loss          |          F1 Score          | Precision          | Recall          | ROC AUC
 
 | Instance 1       | Default   | None        | 50     | No             | 3      | Default       | 0.9736   | -      | 0.9594   | 0.9816    | 0.9383 | 0.9950
  
