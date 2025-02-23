@@ -10,13 +10,13 @@ This project addresses these gaps by developing a tailored ML-based flood predic
 
 Below is a summary of different training instances with their respective configurations and results:
 
-| Training Instance | Optimizer | Regularizer (L1/L2) | Epochs | Early Stopping | Layers | Learning Rate | Accuracy | Loss | F1 Score | Precision | Recall | ROC AUC Score |
-|-------------------|-----------|---------------------|--------|----------------|--------|---------------|----------|------|----------|-----------|--------|---------------|
-| Instance 1        | Default   | None                | 50     | No             | 3      | Default       | 0.9736   | --   | 0.9595   | 0.9816    | 0.9383 | 0.9951        |
-| Instance 2        | Adam      | L2 (0.01)           | 100    | Yes            | 4      | 0.001         | 0.9795   | --   | 0.9685   | 0.9908    | 0.9471 | 0.9983        |
-| Instance 3        | RMSProp   | L1 (0.001)          | 120    | Yes            | 5      | 0.0005        | 0.9663   | --   | 0.9483   | 0.9679    | 0.9295 | 0.9952        |
-| Instance 4        | Adam      | L2 (0.005)          | 80     | No             | 4      | 0.001         | 0.9677   | --   | 0.9500   | 0.9812    | 0.9207 | 0.9958        |
-| Instance 5        | Adam      | L1 & L2 (0.001)     | 150    | Yes            | 6      | 0.0001        | 0.9809   | --   | 0.9713   | 0.9735    | 0.9692 | 0.9984        |
+| Training Instance | Optimizer | Regularizer (L1/L2) | Epochs | Early Stopping | Layers | Learning Rate | Accuracy | F1 Score | Precision | Recall | ROC AUC Score |
+|-------------------|-----------|---------------------|--------|----------------|--------|---------------|----------|----------|-----------|--------|---------------|
+| Instance 1        | Default   | None                | 50     | No             | 3      | Default       | 0.9736   | 0.9595   | 0.9816    | 0.9383 | 0.9951        |
+| Instance 2        | Adam      | L2 (0.01)           | 100    | Yes            | 4      | 0.001         | 0.9795   | 0.9685   | 0.9908    | 0.9471 | 0.9983        |
+| Instance 3        | RMSProp   | L1 (0.001)          | 120    | Yes            | 5      | 0.0005        | 0.9663   | 0.9483   | 0.9679    | 0.9295 | 0.9952        |
+| Instance 4        | Adam      | L2 (0.005)          | 80     | No             | 4      | 0.001         | 0.9677   | 0.9500   | 0.9812    | 0.9207 | 0.9958        |
+| Instance 5        | Adam      | L1 & L2 (0.001)     | 150    | Yes            | 6      | 0.0001        | 0.9809   | 0.9713   | 0.9735    | 0.9692 | 0.9984        |
 
 ## Summary
 
