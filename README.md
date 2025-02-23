@@ -1,10 +1,10 @@
-## NEURAL NETWORK OPTIMIATION AND MODEL COMPARISON
+# Neural Network Optimization and Model Comparison
 
-**Problem Statement**
+## Problem Statement
 
-I developed this project to optimize a Neural Network and compare its performance against Machine Learning algorithms. My goal was to identify the best-performing model for classification using different hyperparameter configurations. I experimented with various optimizers, regularization techniques, and early stopping mechanisms to improve performance. The dataset used consists of labeled instances for multi-class classification.
+This project aims to optimize a Neural Network and compare its performance against traditional Machine Learning algorithms. The goal is to identify the best-performing model for a multi-class classification task by experimenting with different hyperparameter configurations. Various optimization techniques, including optimizers, regularization methods, and early stopping mechanisms, were tested to enhance performance.
 
-**Findings**
+## Findings
 
 Below is a summary of different training instances with their respective configurations and results:
 
@@ -16,17 +16,13 @@ Below is a summary of different training instances with their respective configu
 | Instance 4        | Adam      | L2 (0.005)          | 80     | No             | 4      | 0.001         | 0.9677   | --   | 0.9500   | 0.9812    | 0.9207 | 0.9958        |
 | Instance 5        | Adam      | L1 & L2 (0.001)     | 150    | Yes            | 6      | 0.0001        | 0.9809   | --   | 0.9713   | 0.9735    | 0.9692 | 0.9984        |
 
-**Summary**
+## Summary
 
-From my experiments, the best combination was found in Instance 5, which used the Adam optimizer with both L1 and L2 regularization, early stopping, and a learning rate of 0.0001. This configuration achieved the highest accuracy (0.9809) and the best F1-score (0.9713).
-
-ML Algorithm vs. Neural Network
-
-I also compared the performance of my optimized Neural Network against traditional Machine Learning models:
+The best performance was achieved in **Instance 5**, which used the **Adam optimizer with both L1 and L2 regularization, early stopping, and a learning rate of 0.0001**. This configuration achieved the highest accuracy (0.9809) and the best F1-score (0.9713), indicating a well-balanced model.
 
 ## ML Algorithm vs. Neural Network
 
-I also compared the performance of my optimized Neural Network against traditional Machine Learning models:
+The performance of the optimized Neural Network was also compared to traditional Machine Learning models:
 
 | Model                   | Accuracy     | F1 Score     | Precision     | Recall      | ROC AUC      |
 |-------------------------|--------------|--------------|---------------|-------------|--------------|
@@ -35,26 +31,32 @@ I also compared the performance of my optimized Neural Network against tradition
 | Logistic Regression     | 0.9897       | 0.9843       | 1.0000        | 0.9691      | 0.9997       |
 | **Best Neural Network** | **0.9809**   | **0.9713**   | **0.9734**    | **0.9691**  | **0.9984**   |
 
+Interestingly, **Logistic Regression outperformed the Neural Network**, achieving the highest accuracy and ROC AUC score. This suggests that for this dataset, a simpler model with well-tuned hyperparameters (e.g., regularization strength, solver type) may generalize better than a deep neural network.
 
-Interestingly, Logistic Regression outperformed my Neural Network, achieving the highest accuracy and ROC AUC score. This suggests that for this dataset, a simpler model with well-tuned hyperparameters (e.g., regularization strength, solver type) may generalize better than a deep neural network.
+## Discussion
 
-**Next Steps**
+The results highlight several key insights:
 
-- Further optimize the Neural Network by fine-tuning dropout rates and batch normalization.
+1. **Regularization**: Adding L1 and L2 regularization improved model generalization, with the best-performing instance using both.
+2. **Early Stopping**: Helped prevent overfitting and contributed to better performance in most cases.
+3. **Learning Rate**: A smaller learning rate (0.0001) resulted in better model convergence and higher accuracy.
+4. **Optimizers**: Adam performed consistently well compared to other optimizers.
 
-- Try ensemble techniques to combine Neural Networks with traditional ML models.
+Despite optimizing hyperparameters, **Logistic Regression surprisingly outperformed the Neural Network**, suggesting that simpler models can be highly effective given the right conditions.
 
-- Experiment with additional architectures such as CNNs or Transformers if applicable.
+## Next Steps
 
-- Deploy the best model and create an API for real-world predictions.
+- **Further optimize** the Neural Network by fine-tuning dropout rates and batch normalization.
+- **Experiment with ensemble techniques**, combining Neural Networks with traditional ML models.
+- **Explore alternative architectures** such as CNNs or Transformers if applicable.
+- **Deploy the best model** and create an API for real-world predictions.
 
-**Submission Details**
+## Submission Details
 
-I have included:
+The project includes:
 
- - The complete code for training and evaluating the models.
-
-- A 5-minute video explaining the implementation, hyperparameters, and findings.
+- **Complete code** for training and evaluating the models.
+- **A 5-minute video** explaining the implementation, hyperparameters, and findings.
 
 Feel free to explore my work and suggest improvements!
 
