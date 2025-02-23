@@ -1,10 +1,10 @@
-README: Neural Network Optimization and Model Comparison
+## NEURAL NETWORK OPTIMIATION AND MODEL COMPARISON
 
-Problem Statement
+**Problem Statement**
 
 I developed this project to optimize a Neural Network and compare its performance against Machine Learning algorithms. My goal was to identify the best-performing model for classification using different hyperparameter configurations. I experimented with various optimizers, regularization techniques, and early stopping mechanisms to improve performance. The dataset used consists of labeled instances for multi-class classification.
 
-Findings
+**Findings**
 
 Below is a summary of different training instances with their respective configurations and results:
 
@@ -16,7 +16,7 @@ Below is a summary of different training instances with their respective configu
 | Instance 4        | Adam      | L2 (0.005)          | 80     | No             | 4      | 0.001         | 0.9677   | --   | 0.9500   | 0.9812    | 0.9207 | 0.9958        |
 | Instance 5        | Adam      | L1 & L2 (0.001)     | 150    | Yes            | 6      | 0.0001        | 0.9809   | --   | 0.9713   | 0.9735    | 0.9692 | 0.9984        |
 
-Summary
+**Summary**
 
 From my experiments, the best combination was found in Instance 5, which used the Adam optimizer with both L1 and L2 regularization, early stopping, and a learning rate of 0.0001. This configuration achieved the highest accuracy (0.9809) and the best F1-score (0.9713).
 
@@ -38,7 +38,7 @@ I also compared the performance of my optimized Neural Network against tradition
 
 Interestingly, Logistic Regression outperformed my Neural Network, achieving the highest accuracy and ROC AUC score. This suggests that for this dataset, a simpler model with well-tuned hyperparameters (e.g., regularization strength, solver type) may generalize better than a deep neural network.
 
-Next Steps
+**Next Steps**
 
 Further optimize the Neural Network by fine-tuning dropout rates and batch normalization.
 
@@ -48,7 +48,7 @@ Experiment with additional architectures such as CNNs or Transformers if applica
 
 Deploy the best model and create an API for real-world predictions.
 
-Submission Details
+**Submission Details**
 
 I have included:
 
