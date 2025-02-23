@@ -8,161 +8,17 @@ Findings
 
 Below is a summary of different training instances with their respective configurations and results:
 
-Training Instance
+| Training Instance| Optimizer | Regularizer | Epochs | Early Stopping | Layers | Learning Rate | Accuracy | Loss   | F1 Score | Precision | Recall | ROC AUC
 
-Optimizer
+| Instance 1       | Default   | None        | 50     | No             | 3      | Default       | 0.9736   | -      | 0.9594   | 0.9816    | 0.9383 | 0.9950
+ 
+| Instance 2       | Adam      | L2          | 60     | Yes            | 4      | 0.001         | 0.9794   | -      | 0.9684   | 0.9908    | 0.9471 | 0.9982
 
-Regularizer
+| Instance 3       | RMSProp   | L1 & L2     70         Yes              5        0.0005          0.9662     - 0.9483 0.9679 0.9295                                                                            | 0.9952
 
-Epochs
+| Instance 4       | Adam      | None        100        No               6        0.001         0.9677       - 0.9500 0.9812 0.9207                                                                                   | 0.9957
 
-Early Stopping
-
-Layers
-
-Learning Rate
-
-Accuracy
-
-Loss
-
-F1 Score
-
-Precision
-
-Recall
-
-ROC AUC
-
-Instance 1
-
-Default
-
-None
-
-50
-
-No
-
-3
-
-Default
-
-0.9736
-
--
-
-0.9594
-
-0.9816
-
-0.9383
-
-0.9950
-
-Instance 2
-
-Adam
-
-L2
-
-60
-
-Yes
-
-4
-
-0.001
-
-0.9794
-
--
-
-0.9684
-
-0.9908
-
-0.9471
-
-0.9982
-
-Instance 3
-
-RMSProp
-
-L1 & L2
-
-70
-
-Yes
-
-5
-
-0.0005
-
-0.9662
-
--
-
-0.9483
-
-0.9679
-
-0.9295
-
-0.9952
-
-Instance 4
-
-Adam
-
-None
-
-100
-
-No
-
-6
-
-0.001
-
-0.9677
-
--
-
-0.9500
-
-0.9812
-
-0.9207
-
-0.9957
-
-Instance 5
-
-Adam
-
-L1 & L2
-
-80
-
-Yes
-
-4
-
-0.0001
-
-0.9809
-
--
-
-0.9713
-
-0.9734
-
-0.9691
-
-0.9984
+| Instance 5       | Adam      | L1 & L2     80        Yes                4       0.0001        0.9809       - 0.9713 0.9734 0.9691                                                                               | 0.9984
 
 Summary
 
