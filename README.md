@@ -36,7 +36,7 @@ The best performance was achieved in Instance 5, which used:
 - Early Stopping: Enabled
 - Learning Rate: 0.0001
 - Layers: 6
-- 
+  
 This configuration yielded the highest accuracy (0.9809) and the best F1-score (0.9713), demonstrating a well-balanced model with strong generalization capabilities.
 
 ML Algorithm vs. Neural Network
