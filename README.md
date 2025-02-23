@@ -1,20 +1,37 @@
 ## NEURAL NETWORK OPTIMIZATION AND MODEL COMPARISON
 
-**Problem Statement**
+Problem Statement
+Flooding in South Sudan has devastating consequences, leading to significant loss of lives, displacement, and economic damage. The country’s low-lying terrain and inadequate drainage infrastructure make it highly vulnerable to floods. Existing flood prediction systems often fall short due to:
 
-Flooding in South Sudan has devastating consequences, leading to significant loss of lives, displacement, and economic damage. Existing flood prediction systems often fall short due to:
-
-- **Limited local data**: Insufficient region-specific datasets for accurate modeling.
-- **Poor accuracy**: High false positive rates and unreliable predictions.
-- **Lack of actionable warnings**: Inability to provide timely and actionable alerts to affected communities.
-- 
+Limited local data: Insufficient region-specific datasets for accurate modeling.
+Poor accuracy: High false positive rates and unreliable predictions.
+Lack of actionable warnings: Inability to provide timely and actionable alerts to affected communities.
 Machine Learning (ML) has shown promise in flood prediction, as demonstrated by studies such as Smith et al. (2020), Adebayo et al. (2019), and Zhou et al. (2021). However, challenges remain, including:
 
-- **Data scarcity**: Limited availability of high-quality, region-specific data.
-- **Model generalization**: Difficulty in achieving robust performance across diverse scenarios.
-- **Real-time integration**: Lack of systems capable of providing real-time predictions.
-- 
-This project addresses these gaps by developing a tailored ML-based flood prediction system for South Sudan. The primary goal is to optimize a Neural Network and compare its performance against traditional ML algorithms. The study involves experimenting with various hyperparameter configurations to identify the best-performing model for a multi-class classification task. Techniques such as optimizer selection, regularization, and early stopping were applied to enhance model performance.
+Data scarcity: Limited availability of high-quality, region-specific data.
+Model generalization: Difficulty in achieving robust performance across diverse scenarios.
+Real-time integration: Lack of systems capable of providing real-time predictions.
+This project, FloodSense South Sudan, addresses these gaps by developing a tailored ML-based flood prediction and early warning system. The system leverages historical flood data, meteorological records, and satellite imagery to create a localized solution for South Sudan. The primary goal is to optimize a Neural Network and compare its performance against traditional ML algorithms. The study involves experimenting with various hyperparameter configurations to identify the best-performing model for a multi-class classification task. Techniques such as optimizer selection, regularization, and early stopping were applied to enhance model performance.
+
+**Dataset Acquisition**
+The project utilizes the Kaggle dataset for rainfall statistics and historical flood records. This dataset provides critical inputs for training and evaluating the machine learning models.
+
+**Key Objectives**
+
+- Develop a localized flood prediction system tailored.
+- Optimize machine learning models to improve accuracy, reduce false positives, and enhance generalization.
+- Compare the performance of Neural Networks with traditional ML algorithms such as Random Forest, XGBoost, and Logistic Regression.
+  
+**Approach**
+The project involves:
+
+- **Data preprocessing:** Cleaning, normalizing, and preparing the dataset for modeling.
+- **Model optimization:** Experimenting with hyperparameters such as optimizers, regularization methods, and learning rates.
+- **Performance evaluation:** Comparing models based on metrics like accuracy, F1 score, precision, recall, and ROC AUC.
+
+**Expected Outcomes**
+- A highly accurate flood prediction model.
+- Insights into the effectiveness of Neural Networks versus traditional ML algorithms for flood prediction.
 
 **Findings**
 
