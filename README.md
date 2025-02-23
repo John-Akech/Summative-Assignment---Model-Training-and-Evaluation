@@ -40,21 +40,21 @@ Interestingly, Logistic Regression outperformed my Neural Network, achieving the
 
 **Next Steps**
 
-Further optimize the Neural Network by fine-tuning dropout rates and batch normalization.
+- Further optimize the Neural Network by fine-tuning dropout rates and batch normalization.
 
-Try ensemble techniques to combine Neural Networks with traditional ML models.
+- Try ensemble techniques to combine Neural Networks with traditional ML models.
 
-Experiment with additional architectures such as CNNs or Transformers if applicable.
+- Experiment with additional architectures such as CNNs or Transformers if applicable.
 
-Deploy the best model and create an API for real-world predictions.
+- Deploy the best model and create an API for real-world predictions.
 
 **Submission Details**
 
 I have included:
 
-The complete code for training and evaluating the models.
+ - The complete code for training and evaluating the models.
 
-A 5-minute video explaining the implementation, hyperparameters, and findings.
+- A 5-minute video explaining the implementation, hyperparameters, and findings.
 
 Feel free to explore my work and suggest improvements!
 
