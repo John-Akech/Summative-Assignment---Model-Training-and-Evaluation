@@ -2,7 +2,9 @@
 
 ## Problem Statement
 
-This project aims to optimize a Neural Network and compare its performance against traditional Machine Learning algorithms. The goal is to identify the best-performing model for a multi-class classification task by experimenting with different hyperparameter configurations. Various optimization techniques, including optimizers, regularization methods, and early stopping mechanisms, were tested to enhance performance.
+Flooding in South Sudan results in significant loss of lives and livelihoods. Many existing flood prediction systems suffer from local data limitations, poor accuracy, or lack of actionable warnings. Machine Learning (ML) has demonstrated potential in flood prediction, as evidenced by studies such as Smith et al. (2020), Adebayo et al. (2019), and Zhou et al. (2021). However, region-specific datasets remain insufficient, false positive rates are high, and real-time integration is limited.
+
+This project addresses these gaps by developing a tailored ML-based flood prediction system for South Sudan. The goal is to optimize a Neural Network and compare its performance against traditional ML algorithms. The study involves experimenting with different hyperparameter configurations to identify the best-performing model for a multi-class classification task. Various optimization techniques, including different optimizers, regularization methods, and early stopping mechanisms, were applied to enhance performance.
 
 ## Findings
 
@@ -18,11 +20,11 @@ Below is a summary of different training instances with their respective configu
 
 ## Summary
 
-The best performance was achieved in **Instance 5**, which used the **Adam optimizer with both L1 and L2 regularization, early stopping, and a learning rate of 0.0001**. This configuration achieved the highest accuracy (0.9809) and the best F1-score (0.9713), indicating a well-balanced model.
+The best performance was achieved in **Instance 5**, which used the **Adam optimizer with both L1 and L2 regularization, early stopping, and a learning rate of 0.0001**. This configuration yielded the highest accuracy (0.9809) and the best F1-score (0.9713), demonstrating a well-balanced model.
 
 ## ML Algorithm vs. Neural Network
 
-The performance of the optimized Neural Network was also compared to traditional Machine Learning models:
+The optimized Neural Network was compared with traditional ML models:
 
 | Model                   | Accuracy     | F1 Score     | Precision     | Recall      | ROC AUC      |
 |-------------------------|--------------|--------------|---------------|-------------|--------------|
@@ -31,25 +33,25 @@ The performance of the optimized Neural Network was also compared to traditional
 | Logistic Regression     | 0.9897       | 0.9843       | 1.0000        | 0.9691      | 0.9997       |
 | **Best Neural Network** | **0.9809**   | **0.9713**   | **0.9734**    | **0.9691**  | **0.9984**   |
 
-Interestingly, **Logistic Regression outperformed the Neural Network**, achieving the highest accuracy and ROC AUC score. This suggests that for this dataset, a simpler model with well-tuned hyperparameters (e.g., regularization strength, solver type) may generalize better than a deep neural network.
+Surprisingly, **Logistic Regression outperformed the Neural Network**, achieving the highest accuracy and ROC AUC score. This suggests that for this dataset, a simpler model with well-tuned hyperparameters (e.g., regularization strength, solver type) may generalize better than a deep neural network.
 
 ## Discussion
 
-The results highlight several key insights:
+Key insights from the results include:
 
-1. **Regularization**: Adding L1 and L2 regularization improved model generalization, with the best-performing instance using both.
-2. **Early Stopping**: Helped prevent overfitting and contributed to better performance in most cases.
-3. **Learning Rate**: A smaller learning rate (0.0001) resulted in better model convergence and higher accuracy.
-4. **Optimizers**: Adam performed consistently well compared to other optimizers.
+1. **Regularization**: Using both L1 and L2 regularization improved model generalization, with the best-performing instance incorporating both.
+2. **Early Stopping**: Helped prevent overfitting and improved model performance in most cases.
+3. **Learning Rate**: A smaller learning rate (0.0001) facilitated better model convergence and improved accuracy.
+4. **Optimizers**: The Adam optimizer consistently outperformed other optimizers.
 
-Despite optimizing hyperparameters, **Logistic Regression surprisingly outperformed the Neural Network**, suggesting that simpler models can be highly effective given the right conditions.
+Despite extensive optimization, **Logistic Regression surprisingly outperformed the Neural Network**, highlighting the effectiveness of simpler models under the right conditions.
 
 ## Next Steps
 
 - **Further optimize** the Neural Network by fine-tuning dropout rates and batch normalization.
 - **Experiment with ensemble techniques**, combining Neural Networks with traditional ML models.
-- **Explore alternative architectures** such as CNNs or Transformers if applicable.
-- **Deploy the best model** and create an API for real-world predictions.
+- **Explore alternative architectures**, such as CNNs or Transformers, if applicable.
+- **Deploy the best model** and develop an API for real-world predictions.
 
 ## Submission Details
 
@@ -58,5 +60,4 @@ The project includes:
 - **Complete code** for training and evaluating the models.
 - **A 5-minute video** explaining the implementation, hyperparameters, and findings.
 
-Feel free to explore my work and suggest improvements!
-
+Feel free to explore my work and provide feedback for further improvements!
