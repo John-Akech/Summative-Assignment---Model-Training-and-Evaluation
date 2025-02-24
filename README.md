@@ -99,3 +99,6 @@ Surprisingly, Logistic Regression outperformed the Neural Network, achieving the
 - **Hyperparameter Tuning:** Logistic Regression may have been better tuned for this specific dataset.
 
 Feel free to explore my work and provide feedback for further improvements!
+
+Below is the link to the recorded video:  
+[Recorded Video](https://drive.google.com/file/d/1OfDelEjUxitLQZGbWmjUjrDGBsa6s5tZ/view?usp=sharing)
