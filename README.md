@@ -22,7 +22,7 @@ The project utilizes the Kaggle dataset for rainfall statistics and historical f
 
 **Key Objectives**
 
-- Develop a localized flood prediction system tailored to South Sudan's needs.
+- Develop a localized flood prediction system.
 - Optimize machine learning models to improve accuracy, reduce false positives, and enhance generalization.
 - Compare the performance of Neural Networks with traditional ML algorithms such as Random Forest, XGBoost, and Logistic Regression.
 
